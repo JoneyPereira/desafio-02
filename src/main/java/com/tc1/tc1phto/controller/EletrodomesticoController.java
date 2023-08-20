@@ -19,8 +19,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/eletrodomesticos")
 public class EletrodomesticoController {
-    @Autowired
-    private Validator validator;
+
     @Autowired
     private EletrodomesicoService eletrodomesicoService;
 
