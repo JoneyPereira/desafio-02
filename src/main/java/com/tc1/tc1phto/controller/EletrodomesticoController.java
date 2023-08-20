@@ -37,14 +37,4 @@ public class EletrodomesticoController {
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(eletrodomesticoDto.getId()).toUri();
         return ResponseEntity.created(uri).body(eletrodomesticoDto);
     }
-    private <T>ResponseEntity<Map<Path, String>> validar(T form) {
-        Set<ConstraintViolation<T>> violacoes = validator.validate(form);
-        Map<Path, String> violacoesToMap = violacoes.stream()
-                .collect(Collectors.toMap(
-                        violacao -> violacao.getPropertyPath(), violacao -> violacao.getMessage()));
-        if(!violacoesToMap.isEmpty()){
-            return ResponseEntity.badRequest().body(violacoesToMap);
-        }
-        return null;
-    }
 }
