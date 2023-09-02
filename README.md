@@ -26,7 +26,7 @@ SERVER_PORT=8081
 ```
 
 > **_NOTA:_**  Ao startar a aplicação, para acessar a api basta acessar a seguinte url a depender da porta escolhida
-> na variável SERVER_PORT. Ex: http://localhost:8081/swagger-ui.html#/
+> na variável SERVER_PORT. Ex: http://localhost:8081/swagger-ui/index.html#/
 
 ## Squad
 Grupo 21
