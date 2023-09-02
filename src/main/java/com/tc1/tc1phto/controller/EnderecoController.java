@@ -13,7 +13,7 @@ import javax.validation.Valid;
 import java.net.URI;
 
 @RestController
-@RequestMapping("/endereco")
+@RequestMapping("/enderecos")
 public class EnderecoController {
 
     @Autowired
