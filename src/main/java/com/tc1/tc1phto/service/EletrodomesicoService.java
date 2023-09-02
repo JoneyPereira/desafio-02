@@ -22,9 +22,9 @@ public class EletrodomesicoService {
     private RepositorioEletrodomesticos eletrodomesticosRepositorio;
 
     @Transactional(readOnly = true)
-    public Page<EletrodomesticoDTO> findAllPaged(Pageable pageable){
-        Page<Eletrodomestico> list = eletrodomesticosRepositorio.findAll(pageable);
-        return list.map(x -> new EletrodomesticoDTO(x));
+    public Page<EletrodomesticoDTO> findAllPaged(String nome, String modelo, String potencia, Pageable pageable){
+        Page<Eletrodomestico> page = eletrodomesticosRepositorio.find(nome, modelo, potencia, pageable);
+        return page.map(x -> new EletrodomesticoDTO(x));
     }
     @Transactional
     public EletrodomesticoDTO insert(EletrodomesticoDTO dto){

@@ -16,16 +16,18 @@ import java.net.URI;
 @RestController
 @RequestMapping("/eletrodomesticos")
 public class EletrodomesticoController {
-    @Autowired
-    private Validator validator;
+
     @Autowired
     private EletrodomesicoService eletrodomesicoService;
-
-    @GetMapping()
-    public ResponseEntity<Page<EletrodomesticoDTO>> findAllPaged(Pageable pageable){
-
-        Page<EletrodomesticoDTO> list = eletrodomesicoService.findAllPaged(pageable);
-        return ResponseEntity.ok().body(list);
+    @GetMapping
+    public ResponseEntity<Page<EletrodomesticoDTO>> findAll(
+            @RequestParam(value = "nome", defaultValue = "") String nome,
+            @RequestParam(value = "modelo", defaultValue = "") String modelo,
+            @RequestParam(value = "potencia", defaultValue = "") String potencia,
+            Pageable pageable)
+    {
+        Page<EletrodomesticoDTO> page = eletrodomesicoService.findAllPaged(nome.trim(), modelo.trim(), potencia.trim(), pageable);
+        return ResponseEntity.ok().body(page);
     }
     @GetMapping(value = "/{id}")
     public ResponseEntity<EletrodomesticoDTO> findById(@PathVariable Long id){
