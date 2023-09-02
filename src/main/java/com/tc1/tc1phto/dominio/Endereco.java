@@ -36,13 +36,18 @@ public class Endereco {
     private String cidade;
 
     @JsonProperty
+    @Column(name="cep")
+    private String cep;
+
+    @JsonProperty
     @Column(name="estado")
     private String estado;
-    public Endereco(String rua, String numero, String bairro, String cidade,String estado){
+    public Endereco(String rua, String numero, String bairro, String cidade,String cep, String estado){
         this.rua = rua;
         this.numero = numero;
         this.bairro = bairro;
         this.cidade = cidade;
+        this.cep = cep;
         this.estado = estado;
     }
 }

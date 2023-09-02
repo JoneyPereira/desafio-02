@@ -39,7 +39,6 @@ public class EletrodomesicoService {
         Eletrodomestico entity = obj.orElseThrow(() -> new ResourceNotFoundException("Objeto não encontrado, id: " + id));
         return new EletrodomesticoDTO(entity);
     }
-
     @Transactional
     public EletrodomesticoDTO update(Long id, EletrodomesticoDTO dto){
         try {
@@ -52,7 +51,6 @@ public class EletrodomesicoService {
             throw new ResourceNotFoundException("Objeto não encontrado, id: " + id);
         }
     }
-
     public void delete(Long id){
         try {
             eletrodomesticosRepositorio.deleteById(id);

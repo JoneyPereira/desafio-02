@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import javax.validation.Valid;
-import javax.validation.Validator;
 import java.net.URI;
 
 @RestController
@@ -49,7 +48,7 @@ public class EletrodomesticoController {
         return ResponseEntity.ok().body(dto);
     }
     @DeleteMapping(value = "/{id}")
-    public ResponseEntity<Void> update(@PathVariable Long id){
+    public ResponseEntity<Void> delete(@PathVariable Long id){
 
         eletrodomesicoService.delete(id);
         return ResponseEntity.noContent().build();
