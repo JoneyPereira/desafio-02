@@ -33,7 +33,7 @@ Grupo 21
 
 ## Repositório
 
-- [tc1-api-phto](https://github.com/paulohto/tc1-phto)
+- [tc1-api-phto](https://github.com/JoneyPereira/desafio-02/tree/dev)
 
 ## Commits Guideline
 

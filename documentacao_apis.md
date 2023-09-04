@@ -7,7 +7,7 @@ Esses são os primeiros requisitos referentes ao primeiro TechChallenge da Pós:
 #
 
 ## :tv: API: Cadastra Eletrodoméstico
-Endpoint: http://localhost:8080/eletrodomesticos
+Endpoint: http://localhost:8081/eletrodomesticos
 <br>Essa API cadastra eletrodomésticos. A entrada deve conter um JSON com os dados obrigatórios:
 
 ~~~json
@@ -47,7 +47,7 @@ Caso algum valor não seja declarado ou alguma chave, o retorno será uma indica
 ##
 
 ## :raising_hand: API: Cadastra Pessoa
-Endpoint: http://localhost:8080/pessoas
+Endpoint: http://localhost:8081/pessoas
 <br>Essa API cadastra pessoas. A entrada deve conter um JSON com os dados obrigatórios:
 ~~~json
 { 
@@ -86,7 +86,7 @@ Caso algum valor não seja declarado ou alguma chave, o retorno será uma indica
 ##
 
 ## :house: API: Cadastra Endereço
-Endpoint: http://localhost:8080/enderecos
+Endpoint: http://localhost:8081/enderecos
 <br>Essa API cadastra endereços. A entrada deve conter um JSON com os dados obrigatórios:
 ~~~json
 { 
