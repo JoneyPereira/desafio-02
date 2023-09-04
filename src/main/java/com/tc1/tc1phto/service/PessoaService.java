@@ -1,7 +1,6 @@
 package com.tc1.tc1phto.service;
 
 import com.tc1.tc1phto.controller.dto.PessoaDTO;
-import com.tc1.tc1phto.controller.form.PessoaForm;
 import com.tc1.tc1phto.dominio.Pessoa;
 import com.tc1.tc1phto.repositorio.RepositorioPessoas;
 import com.tc1.tc1phto.service.exceptions.DatabaseException;

@@ -5,11 +5,8 @@ import com.tc1.tc1phto.dominio.Eletrodomestico;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.NonNull;
 import javax.validation.constraints.NotBlank;
-import javax.validation.Validation;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+
 
 @Getter
 @Setter

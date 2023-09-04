@@ -18,7 +18,6 @@ public class PessoaController {
 
     @Autowired
     private PessoaService pessoaService;
-
     @GetMapping
     public ResponseEntity<Page<PessoaDTO>> findAll(
             @RequestParam(value = "nome", defaultValue = "") String nome,
