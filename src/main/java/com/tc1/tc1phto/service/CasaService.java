@@ -61,6 +61,6 @@ public class CasaService {
         }
     }
     private void copyDtoToEntity(CasaDTO casaDto, Casa casaEntity) {
-        casaEntity.setCasa_uuid(casaDto.getUuid());
+        casaEntity.setId(casaDto.getId());
     }
 }

@@ -45,7 +45,7 @@ public class Endereco {
     private String estado;
 
     @OneToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "casa_id")
     private Casa casa;
 
     @ManyToMany

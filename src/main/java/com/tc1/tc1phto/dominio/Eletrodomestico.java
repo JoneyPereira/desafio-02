@@ -34,12 +34,12 @@ public class Eletrodomestico {
     @Column(name="selo")
     private String selo;
 
-    @OneToOne
-    @JoinColumn(name = "id")
+    @ManyToOne
+    @JoinColumn(name = "endereco_id")
     private Endereco endereco;
 
     @OneToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "casa_id")
     private Casa casa;
 
     public Eletrodomestico(String nome, String modelo, String potencia, String selo){

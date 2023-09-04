@@ -40,15 +40,15 @@ public class Pessoa {
     private String parentesco;
 
     @ManyToMany
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "endereco_id")
     private Set<Endereco> enderecos = new HashSet<>();
 
     @ManyToMany
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "casa_id")
     private Set<Casa> casas = new HashSet<>();
 
     @ManyToMany
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "eletromestico_id")
     private Set<Eletrodomestico> eletromesticos = new HashSet<>();
 
     public Pessoa (String nome, String datanascimento, String sexo, String parentesco){

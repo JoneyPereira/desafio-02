@@ -16,7 +16,7 @@ import javax.validation.constraints.NotBlank;
 public class CasaDTO {
     private static final long serialVersionUID = 1L;
 
-    private String uuid;
+    private String id;
 
     @NotBlank(message = "Pessoa não pode estar em branco e não pode ser nulo.")
     private Pessoa pessoa;
@@ -28,6 +28,6 @@ public class CasaDTO {
     private Eletrodomestico eletrodomestico;
 
     public CasaDTO(Casa entity){
-        this.uuid = entity.getCasa_uuid();
+        this.id = entity.getId();
     }
 }

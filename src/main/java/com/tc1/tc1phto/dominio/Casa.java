@@ -16,18 +16,21 @@ public class Casa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "uuid")
-    private String casa_uuid;
+    @Column(name = "casa_id")
+    private String id;
 
-    @OneToMany(mappedBy = "id")
+    @OneToMany
+    @JoinColumn(name = "pessoa_id")
     private List<Pessoa> pessoas = new ArrayList<>();
 
-    @OneToOne(mappedBy = "id")
+    @ManyToOne
+    @JoinColumn(name = "endereco_id")
     private Endereco endereco;
 
-    @OneToMany(mappedBy = "id")
+    @OneToMany
+    @JoinColumn(name = "eletrodomestico_id")
     private List<Eletrodomestico> eletrodomesticos = new ArrayList<>();
-    public Casa(String casa_uuid){
-        this.casa_uuid = casa_uuid;
+    public Casa(String id){
+        this.id = id;
     }
 }
