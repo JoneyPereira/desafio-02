@@ -13,20 +13,28 @@ public class EnderecoForm {
     @JsonProperty
     @NotBlank(message = "Rua não pode estar em branco e não pode ser nulo.")
     private String rua;
+
     @JsonProperty
     @NotBlank(message = "Número não pode estar em branco e não pode ser nulo.")
     private String numero;
+
     @JsonProperty
     @NotBlank(message = "Bairro não pode estar em branco e não pode ser nulo.")
     private String bairro;
+
     @JsonProperty
     @NotBlank(message = "Cidade não pode estar em branco e não pode ser nulo.")
     private String cidade;
+
+    @JsonProperty
+    @NotBlank(message = "Cep não pode estar em branco e não pode ser nulo.")
+    private String cep;
+
     @JsonProperty
     @NotBlank(message = "Estado não pode estar em branco e não pode ser nulo.")
     private String estado;
 
     public Endereco toEndereco(){
-        return new Endereco(rua,numero, bairro, cidade,estado);
+        return new Endereco(rua,numero, bairro, cidade, cep, estado);
     }
 }

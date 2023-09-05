@@ -26,14 +26,14 @@ SERVER_PORT=8081
 ```
 
 > **_NOTA:_**  Ao startar a aplicação, para acessar a api basta acessar a seguinte url a depender da porta escolhida
-> na variável SERVER_PORT. Ex: http://localhost:8080/swagger-ui.html#/
+> na variável SERVER_PORT. Ex: http://localhost:8081/swagger-ui/index.html#/
 
 ## Squad
 Grupo 21
 
 ## Repositório
 
-- [tc1-api-phto](https://github.com/paulohto/tc1-phto)
+- [tc1-api-phto](https://github.com/JoneyPereira/desafio-02/tree/dev)
 
 ## Commits Guideline
 

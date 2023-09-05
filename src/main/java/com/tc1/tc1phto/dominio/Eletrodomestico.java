@@ -15,7 +15,7 @@ public class Eletrodomestico {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "eletrodomestico_id")
     private Long id;
 
     @JsonProperty
@@ -33,6 +33,14 @@ public class Eletrodomestico {
     @JsonProperty
     @Column(name="selo")
     private String selo;
+
+    @ManyToOne
+    @JoinColumn(name = "endereco_id")
+    private Endereco endereco;
+
+    @OneToOne
+    @JoinColumn(name = "casa_id")
+    private Casa casa;
 
     public Eletrodomestico(String nome, String modelo, String potencia, String selo){
         this.nome = nome;
