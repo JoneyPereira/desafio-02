@@ -15,7 +15,7 @@ Relatório de tecnologias e dificuldades encontradas na conclusão dos principai
 
 ### Desafios e Soluções
 
-* Equipe realizou o desenvolvimento via pair programming.
+* Desenvolvimento realizado com a técnica de pair programming.
 * Dificuldade ao tentar rodar cada API em um único endereço @RequestMapping("/eletrodomesticos"). Não sendo possível, foi necessário cria um endereço para cada @RequestMapping().
 * Dificuldades na implatanção da validações, devido não compreensão do método privado **validar()**. Após pesquisas e implantação o Validator passou a funcionar como nas aulas.
 * Dificuldade ao tentar rodar um container para o banco de dados mysql, apos algumas consultas foi possivel criar e rodar a imagem adequadamente.
